@@ -35,7 +35,7 @@
     <!---------------------------MAIN------------------------->
     <main>
       <!---------------------------FILTER------------------------->
-      <section class="filter">
+      <section data-test="filter" class="filter">
         <h1>Гостиницы Седоны</h1>
         <p>Гостиницы</p>
         <form action="https://echo.htmlacademy.ru">
@@ -59,7 +59,7 @@
 
       </section>
       <!---------------------------CATALOG------------------------->
-      <section class="catalog">
+      <section data-test="catalog" class="catalog">
         <h2 class="visually-hidden">Каталог гостиниц</h2>
         <p>Найдено гостиниц: <span>38</span></p>
         <select name="catalog-filter">
@@ -114,7 +114,8 @@
             <p>Рейтинг: <span>5,0</span></p>
           </div>
         </div>
-        <div class="pagination">
+      <!---------------------------PAGINATION------------------------->
+      <div class="pagination">
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-active">1</li>
             <li class="pagination-item pagination-item">2</li>
@@ -128,7 +129,7 @@
 
       </section>
       <!---------------------------SUBSCRIBE------------------------->
-      <section class="subscribe">
+      <section data-test="subscribe" class="subscribe">
         <h2 class="visually-hidden">Подписаться</h2>
         <h3>Подпишитесь на рассылку</h3>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -141,7 +142,7 @@
       </section>
     </main>
     <!---------------------------FOOTER------------------------->
-    <footer class="page-footer">
+    <footer data-test="footer" class="page-footer">
       <ul class="footer-sotial">
         <li class="sotial-item">
           <a href="https://vk.com/htmlacademy"><img src="#" alt="Логотип вконтакте"></a>
