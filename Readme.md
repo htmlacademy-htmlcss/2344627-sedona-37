@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Тадеуш](https://up.htmlacademy.ru/htmlcss/37/user/2344627).
-* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 
 ---
 
