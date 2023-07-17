@@ -2,41 +2,49 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Гостиницы</title>
 </head>
   <body>
-    <!---------------------------HEADER------------------------->
-    <header data-test="header" class="page-header">
-      <nav class="navigation">
-        <a href="index.html" class="navigation-logo"><img src="images/logo.svg " width="140" height="70" alt="Логотип города Седона"></a>
-        <ul>
-          <li class="navigation-item"><a href="index.html">Главная</a></li>
-          <li class="navigation-item"><a href="#">О Седоне</a></li>
-          <li class="navigation-item active"><a href="#">Гостиницы</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li>
-          <a href="#">
-            <span class="visually-hidden">Поиск</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="visually-hidden">Избранное</span>
-          </a>
-          <a href="#" class="selected-number">12</a>
-        </li>
-      </ul>
-      <a href="#">Хочу сюда!</a>
+   <!---------------------------HEADER------------------------->
+   <div class="page-container"></div>
+   <header data-test="header" class="page-header">
+     <a href="index.html" class="navigation-logo">
+       <img src="images/logo.svg" class="logo-sedona" width="140" height="70" alt="Логотип города Седона">
+     </a>
+     <nav class="navigation">
+       <ul class="navigation-list navigation-main">
+         <li class="navigation-item li-marker">
+           <a class="navigation-link link-interection" href="index.html">Главная</a></li>
+         <li class="navigation-item li-marker">
+           <a class="navigation-link link-interection" href="#">О Седоне</a></li>
+         <li class="navigation-item li-marker active">
+           <a class="navigation-link link-interection" href="#">Гостиницы</a></li>
+       </ul>
+     </nav>
 
-    </header>
+     <ul class="navigation-list navigation-seartch">
+       <li class="navigation-user li-marker">
+         <a class="link-seartch link-user" href="#">
+           <span class="visually-hidden">Поиск</span>
+         </a>
+       </li>
+       <li class="navigation-user li-marker">
+         <a class="link-favorite link-user" href="#">
+           <span class="visually-hidden">Избранное</span>
+         </a>
+         <span class="selected-number">12</span>
+       </li>
+     </ul>
+     <a class="navigation-list navigation-button" href="#">Хочу сюда!</a>
+
+   </header>
     <!---------------------------MAIN------------------------->
     <main data-test="main">
       <h1>Гостиницы Седоны</h1>
       <ol>
-        <li></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li class="li-marker"></li>
+        <li class="li-marker"><a href="#">Гостиницы</a></li>
       </ol>
       <!---------------------------FILTER------------------------->
       <section data-test="filter" class="filter">
@@ -44,17 +52,17 @@
           <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
-              <li><input type="checkbox" name="conveniences" checked>Бассейны</li>
-              <li><input type="checkbox" name="conveniences" checked>Парковка</li>
-              <li><input type="checkbox" name="conveniences">Wi-Fi</li>
+              <li class="li-marker"><input type="checkbox" name="conveniences" checked>Бассейны</li>
+              <li class="li-marker"><input type="checkbox" name="conveniences" checked>Парковка</li>
+              <li class="li-marker"><input type="checkbox" name="conveniences">Wi-Fi</li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Тип Жилья:</legend>
             <ul>
-              <li><input type="radio" name="housing" checked>Гостиница</li>
-              <li><input type="radio" name="housing">Мотель</li>
-              <li><input type="radio" name="housing">Апартаменты</li>
+              <li class="li-marker"><input type="radio" name="housing" checked>Гостиница</li>
+              <li class="li-marker"><input type="radio" name="housing">Мотель</li>
+              <li class="li-marker"><input type="radio" name="housing">Апартаменты</li>
             </ul>
           </fieldset>
           <fieldset>
@@ -75,9 +83,9 @@
           <option value="expensive">Сначала дорогие</option>
         </select>
         <ul class="catalog-option">
-          <li class="option-item active-option-inem"><a href="#"></a></li>
-          <li class="option-item"><a href="#"></a></li>
-          <li class="option-item"><a href="#"></a></li>
+          <li class="option-item li-marker active-option-inem"><a href="#"></a></li>
+          <li class="option-item li-marker"><a href="#"></a></li>
+          <li class="option-item li-marker"><a href="#"></a></li>
         </ul>
         <!---------------------------SEARCH-RESULT------------------------->
         <ul class="search-result">
@@ -91,7 +99,7 @@
 
             <p>Рейтинг: <span>8,5</span></p>
           </li>
-          <li class="search-result-item">
+          <li class="search-result-item li-marker">
             <a href="#"><img src="images/hotel-2.jpg" alt="Вид из гостиницы Poco Diablo" width="300" height="212"></a>
             <h3><a href="#">Villas at Poco Diablo</a></h3>
             <p>Гостиница</p>
@@ -101,7 +109,7 @@
 
             <p>Рейтинг: <span>9,2</span></p>
           </li>
-          <li class="search-result-item">
+          <li class="search-result-item li-marker">
             <a href="#"><img src="images/hotel-3.jpg" alt="Вид из гостиницы Desert Quail" width="300" height="212"></a>
             <h3><a href="#">Desert Quail Inn</a></h3>
             <p>Гостиница</p>
@@ -111,7 +119,7 @@
 
             <p>Рейтинг: <span>6,9</span></p>
           </li>
-          <li class="search-result-item">
+          <li class="search-result-item li-marker">
             <a href="#"><img src="images/hotel-4.jpg" alt="Вид из гостиницы GreenTree" width="300" height="212"></a>
             <h3><a href="#">GreenTree Inn</a></h3>
             <p>Гостиница</p>
@@ -125,12 +133,12 @@
       <!---------------------------PAGINATION------------------------->
       <div class="pagination">
           <ul class="pagination-list">
-            <li class="pagination-item pagination-item-active">1</li>
-            <li class="pagination-item pagination-item">2</li>
-            <li class="pagination-item pagination-item">3</li>
-            <li class="pagination-item pagination-item">4</li>
-            <li class="pagination-item pagination-item">...</li>
-            <li class="pagination-item pagination-item">10</li>
+            <li class="li-marker pagination-item pagination-item-active">1</li>
+            <li class="li-marker pagination-item pagination-item">2</li>
+            <li class="li-marker pagination-item pagination-item">3</li>
+            <li class="li-marker pagination-item pagination-item">4</li>
+            <li class="li-marker pagination-item pagination-item">...</li>
+            <li class="li-marker pagination-item pagination-item">10</li>
           </ul>
 
         </div>
@@ -152,13 +160,13 @@
     <!---------------------------FOOTER------------------------->
     <footer data-test="footer" class="page-footer">
       <ul class="footer-sotial">
-        <li class="sotial-item">
+        <li class="li-marker sotial-item">
           <a href="https://vk.com/htmlacademy"></a>
         </li>
-        <li class="sotial-item">
+        <li class="li-marker sotial-item">
           <a href="https://t.me/htmlacademy"></a>
         </li>
-        <li class="sotial-item">
+        <li class="li-marker sotial-item">
           <a href="https://www.youtube.com/user/htmlacademyru"></a>
         </li>
       </ul>

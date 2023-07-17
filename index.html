@@ -7,30 +7,41 @@
   </head>
   <body>
     <!---------------------------HEADER------------------------->
+    <div class="page-container"></div>
     <header data-test="header" class="page-header">
       <nav class="navigation">
-        <a href="index.html" class="navigation-logo"><img src="images/logo.svg" width="140" height="70" alt="Логотип города Седона"></a>
-        <ul>
-          <li class="navigation-item active"> <a href="#">Главная</a></li>
-          <li class="navigation-item">        <a href="#">О Седоне</a></li>
-          <li class="navigation-item">        <a href="catalog.html">Гостиницы</a></li>
+        <a href="index.html" class="navigation-logo">
+          <img src="images/logo.svg" class="logo-sedona" width="140" height="70" alt="Логотип города Седона">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item li-marker active">
+            <a class="navigation-link link-interection" href="#">Главная</a>
+          </li>
+          <li class="navigation-item li-marker">
+            <a class="navigation-link link-interection" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item li-marker">
+            <a class="navigation-link link-interection" href="catalog.html">Гостиницы</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li>
-          <a href="#">
+
+      <ul class="navigation-seartch">
+        <li class="navigation-user li-marker">
+          <a class="link-seartch link-user" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
-        <li>
-          <a href="#">
+        <li class="navigation-user li-marker">
+          <a class="link-favorite link-user" href="#">
             <span class="visually-hidden">Избранное</span>
           </a>
           <span class="selected-number">12</span>
         </li>
       </ul>
-      <a class="navigation-button" href="#">Хочу сюда!</a>
-
+      <div class="navigation-button">
+        <a href="#">Хочу сюда!</a>
+      </div>
     </header>
     <!---------------------------MAIN------------------------->
     <main data-test="main">
@@ -46,24 +57,24 @@
       <section data-test="advantages" class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
           <ul>
-            <li class="advantages-card">
+            <li class="advantages-card li-marker">
               <h3>Настоящий городок</h3>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               <img src="images/advantages-1.jpg" width="800" height="385" alt="Вид внутри города Седона">
             </li>
-            <li class="advantages-card">
+            <li class="advantages-card li-marker">
               <h3>Небольшая площадь</h3>
               <p>Все достопримечательности находятся очень близко</p>
             </li>
-          <li class="advantages-card">
+          <li class="advantages-card li-marker">
             <h3>Красивая дорога</h3>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
-          <li class="advantages-card">
+          <li class="advantages-card li-marker">
             <h3>Мало туристов</h3>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="advantages-card">
+          <li class="advantages-card li-marker">
             <h3>Там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img src="images/advantages-2.jpg" width="800" height="385" alt="Вид на мост дьявола">
@@ -73,15 +84,15 @@
           <p class="hero-furst-item">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
           <p class="hero-second-item">Опытный персонал и качественное обслуживание!</p>
           <ul>
-            <li class="advantages-card">
+            <li class="advantages-card li-marker">
               <h4>Жильё</h4>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="advantages-card">
+            <li class="advantages-card li-marker">
               <h4>Еда</h4>
               <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="advantages-card">
+            <li class="advantages-card li-marker">
               <h4>Сувениры</h4>
               <p>Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -108,13 +119,13 @@
       <!---------------------------FOOTER------------------------->
     <footer data-test="footer" class="page-footer">
       <ul class="footer-sotial">
-        <li class="sotial-item">
+        <li class="sotial-item li-marker">
           <a href="https://vk.com/htmlacademy"></a>
         </li>
-        <li class="sotial-item">
+        <li class="sotial-item li-marker">
           <a href="https://t.me/htmlacademy"></a>
         </li>
-        <li class="sotial-item">
+        <li class="sotial-item li-marker">
           <a href="https://www.youtube.com/user/htmlacademyru"></a>
         </li>
       </ul>

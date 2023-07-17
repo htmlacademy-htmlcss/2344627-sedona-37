@@ -12,7 +12,9 @@
   font-weight: 700;
   font-display: swap;
 }
-
+html{
+  height: 100%;
+}
 body{
   font-family: 'PT sans', sans-serif;
   font-size: 18px;
@@ -20,11 +22,40 @@ body{
   line-height: 21px;
   color: #333;
   font-weight: 400;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: #000 solid 2px;
 }
-.visually-hidden{
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.li-marker{
+  list-style-type: none;
+}
+.page-container{
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fff;
+  color: #000;
+  width: 1200px;
+  margin: 0 auto;
 }
 .page-header{
+  display: flex;
+  max-height: 64px;
+
   font-family: 'PT sans', sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -32,10 +63,127 @@ body{
   font-weight: 700;
   font-style: normal;
 }
-.navigation a{
-  color: inherit;
+.navigation-logo{
+  margin: 0  28px 0 70px;
+  width: 140px;
+  height: 70px;
+
+}
+.navigation{
+  display: flex;
+  justify-content: center;
+
+}
+
+.navigation-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+  max-width: 700px;
+}
+
+.navigation-item{
+  padding: 20px 16px 0 16px;
+  min-width:  60px;
+  height: 100%;
+
+}
+.navigation-item.active{
+  text-decoration: underline 2px #756257;
+  text-underline-offset: 24px;
+}
+.navigation-link{
+  display: block;
+  text-align: center;
+  height: 100%;
+}
+
+.page-header a{
   text-decoration: none;
 }
+
+
+.navigation-seartch{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 132px;
+  min-height: 64px;
+  margin-right: 20px;
+  margin-left: auto;
+}
+.navigation-button{
+  background-color: #756157;
+  width: 110px;
+  padding: 8px 34px;
+  margin: 14px 70px;
+  border-radius: ;
+}
+.navigation-button a{
+  color: #ffffff;
+  text-transform: uppercase;
+
+}
+/*
+.navigation-user {
+  width: 44px;
+  min-height: 64px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+}
+.link-search {
+  background-image: url("/images/seartch.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  width: 20px;
+  height: 64px;
+  display: block;
+}
+
+.link-user:hover,
+.link-user:focus-visible {
+  opacity: 0.5;
+}
+
+.link-user:active {
+  opacity: 0.3;
+}
+.link-favorite {
+  background-image: url("../image/decor_images/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  width: 20px;
+  height: 64px;
+  display: block;
+}
+
+.selected-number{
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #7db54f;
+  min-width: 20px;
+  min-height: 20px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 5px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 11px;
+  left: 20px;
+}
+
+
+
 .navigation-button{
   background-color: #756157;
   font-size: 16px;
@@ -43,4 +191,73 @@ body{
   text-transform: uppercase;
   color: #fff;
 
+}
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.header-button {
+  font-size: 16px;
+  width: 160px;
+  display: inline-block;
+  line-height: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  word-wrap: break-word;
+  flex-shrink: 0;
+  margin: 5px 0;
+}
+
+.button-brown {
+  background-color: #756157;
+}
+
+.button-brown:hover {
+  background-color: #615048;
+}
+
+.button-brown:focus-visible {
+  background-color: #615048;
+}
+
+.button-brown:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.button-blue {
+  background-color: #82b3d3;
+}
+
+.button-blue:hover {
+  background-color: #68a2ca;
+}
+
+.button-blue:focus-visible {
+  background-color: #68a2ca;
+}
+
+.button-blue:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.button-disabled:disabled {
+  background-color: #e5e5e5;
+} */
+
+
+.hero{
+  background-image: url(/images/hero-bg.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
